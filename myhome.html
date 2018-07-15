@@ -1,54 +1,89 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script language="javascript" src="domain.js"></script>
-<title>myhome</title>
-<style type="text/css">
-a{ text-decoration:none;font-size:20px; color:#06F}
-a:hover{ text-decoration:none;font-size:24px; color:#FF0}
-</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script language="javascript" src="domain.js"></script>
+    <title>myhome</title>
+    <style type="text/css">
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            color: #06F
+        }
+        
+        a:hover {
+            text-decoration: none;
+            font-size: 24px;
+            color: #FF0
+        }
+        
+        .baidu {
+            margin-bottom: 50px;
+        }
+        
+        .container-body {
+            margin-left: 15%;
+            width: 70%;
+        }
+        
+        .container-body div {
+            font-size: 18pt;
+            line-height: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            -webkit-transition: all .2s linear;
+            transition: all .2s linear;
+        }
+        
+        .container-body div:hover {
+            cursor: pointer;
+            -moz-box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 
-<body>
-<center>
-<form action="http://www.baidu.com/baidu" target="_blank"><input name=tn type=hidden value=baidu>
-<a href="http://www.baidu.com/" target="_blank"><img src="//www.baidu.com/img/bd_logo1.png?where=super" alt="Baidu" align="center" border="0" style="width:180px;height:90px;"></a>
-<br></br>
-<input type="text"  name="word"  size=50 style="width:500px;height:30px;" autocomplete="off" >&nbsp;
-<input type="submit"  value="百度搜索" style="width:80px;height:35px;"></td></tr></table></form>
-</center>
-<br></br>
-<font face="华文楷书">
-<center>
-  <table width="1000" height="234" border="0" align="center">
-    <tr>
-      <td width="242" align="center" valign="middle" bgcolor="#FFFFFF"><h2><a href="http://bbs.pcbeta.com" target="_blank">远景论坛</a></h2></td>
-      <td width="244" align="center" valign="middle" bgcolor="#FFFFFF"><h2><a href="http://www.52pojie.cn" target="_blank">吾爱破解论坛</a></h2></td>
-      <td width="242" align="center" valign="middle" bgcolor="#FFFFFF"><h2><a href="http://mail.qq.com/cgi-bin/frame_html?sid=S2B2e9pNun59KzVg&amp;r=7c9318a4dc1879868ef457fc03f5b4ac" target="_blank">QQ邮箱</a></h2></td>
-      <td width="244" align="center" valign="middle" bgcolor="#FFFFFF"><h2><a href="https://www.douyu.com" target="_blank">斗鱼</a></h2></td>
-    </tr>
-    <tr>
-      <td align="center" valign="middle" bgcolor="#FFFFFF"><h2><a href="http://weibo.com/" target="_blank">新浪微博</a></h2></td>
-      <td align="center" valign="middle" bgcolor="#FFFFFF"><h2><a href="http://www.taobao.com" target="_blank">淘宝</a></h2></td>
-      <td align="center" valign="middle" bgcolor="#FFFFFF"><h2><a href="http://www.mi.com" target="_blank">小米网</a></h2></td>
-      <td align="center" valign="middle" bgcolor="#FFFFFF"><h2><a href="http://www.miui.com/forum.php" target="_blank">miui</a></h2></td>
-    </tr>
-    <tr>
-      <td align="center" valign="middle" bgcolor="#FFFFFF"><h2><a href="http://www.zhibo8.cc" target="_blank">直播吧</a></h2></td>
-      <td align="center" valign="middle" bgcolor="#FFFFFF"><h2><a href="http://mail.163.com" target="_blank">163邮箱</a></h2></td>
-      <td align="center" valign="middle" bgcolor="#FFFFFF"><h2><a href="http://bbs.xiaomi.cn" target="_blank">小米论坛</a></h2></td>
-      <td align="center" valign="middle" bgcolor="#FFFFFF"><h2><a href="http://vdisk.weibo.com/" target="_blank">微盘</a></h2></td>
-    </tr>
-    <tr>
-      <td align="center" valign="middle" bgcolor="#FFFFFF"><h2><a href="http://www.net.cn/core/customer/index" target="_blank">万网用户中心</a></h2></td>
-      <td align="center" valign="middle" bgcolor="#FFFFFF"><h2><font face="微软雅黑"></font><a href="http://www.id97.com" target="_blank">97电影</a></h2></td>
-      <td align="center" valign="middle" bgcolor="#FFFFFF"><h2><a href="http://www.hao123.com/" target="_blank">hao123</a></h2></td>
-      <td align="center" valign="middle" bgcolor="#FFFFFF"><h2><a href="https://wx.qq.com" target="_blank">微信</a></h2></td>
-    </tr>
-  </table>
-
-</center>
-</font>
+<body style="background-color: #f5f5f5">
+    <center class="baidu">
+        <form action="http://www.baidu.com/baidu" target="_blank"><input name=tn type=hidden value=baidu>
+            <a href="http://www.baidu.com/" target="_blank"><img src="http://onetskgu4.bkt.clouddn.com/baidu1.png" alt="Baidu" align="center" border="0" style="width:200px;height:200px;margin-top: 20px;"></a>
+            <br></br>
+            <input type="text" name="word" size=50 style="width:500px;height:30px;" autocomplete="off">&nbsp;
+            <input type="submit" value="百度搜索" style="width:80px;height:35px;"></td>
+            </tr>
+            </table>
+        </form>
+    </center>
+    <div class="container-body text-center">
+        <div class="col-lg-3" title="http://bbs.pcbeta.com">远景论坛</div>
+        <div class="col-lg-3" title="https://www.52pojie.cn">吾爱破解论坛</div>
+        <div class="col-lg-3" title="https://mail.qq.com/">QQ邮箱</div>
+        <div class="col-lg-3" title="https://www.douyu.com">斗鱼</div>
+        <div class="col-lg-3" title="https://weibo.com">新浪微博</div>
+        <div class="col-lg-3" title="https://tool.lu/timestamp/">工具</div>
+        <div class="col-lg-3" title="https://www.mi.com">小米网</div>
+        <div class="col-lg-3" title="https://www.miui.com/forum.php">miui</div>
+        <div class="col-lg-3" title="https://home.console.aliyun.com/new#/">阿里云</div>
+        <div class="col-lg-3" title="https://mail.163.com">163邮箱</div>
+        <div class="col-lg-3" title="https://vdisk.weibo.com">微盘</div>
+        <div class="col-lg-3" title="http://www.iconfont.cn/">iconfont</div>
+        <div class="col-lg-3" title="http://www.id97.com/">97电影</div>
+        <div class="col-lg-3" title="http://wx.qq.com">微信</div>
+        <div class="col-lg-3" title="https://leetcode-cn.com/">leecode</div>
+        <div class="col-lg-3" title="https://www.panda.tv/">熊猫</div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $(".container-body div").click(function(e) {
+                window.open(e.target.title)
+            })
+        })
+    </script>
 </body>
+
 </html>
