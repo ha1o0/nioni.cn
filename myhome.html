@@ -6,7 +6,6 @@
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script language="javascript" src="domain.js"></script>
     <title>myhome</title>
     <style type="text/css">
         .baidu {
@@ -39,7 +38,9 @@
 <body style="background-color: #f5f5f5">
     <center class="baidu">
         <form action="http://www.baidu.com/baidu" target="_blank"><input name=tn type=hidden value=baidu>
-            <a href="http://www.baidu.com/" target="_blank"><img src="http://onetskgu4.bkt.clouddn.com/baidu1.png" alt="Baidu" align="center" border="0" style="width:200px;height:200px;"></a>
+            <a href="http://www.baidu.com/" target="_blank">
+                <img class="baidu-logo" src="http://onetskgu4.bkt.clouddn.com/baidugray.png" align="center" style="width:200px;height:200px;">
+            </a>
             <br>
             <input type="text" name="word" size=50 style="width:500px;height:30px;" autocomplete="off">&nbsp;
             <input type="submit" value="百度搜索" style="width:80px;height:35px;"></td>
@@ -67,6 +68,16 @@
     </div>
     <script>
         $(document).ready(function() {
+            let colors = ['blue', 'red', 'yellow', 'green', 'purple']
+            let colorNumbers = ['#1296db', '#D81E06', '#f4ea2a', '#87C38F', '#DD6572']
+            let random = Math.floor(Math.random() * 5)
+            $(".baidu-logo").attr('src', 'http://onetskgu4.bkt.clouddn.com/baidu' + colors[random] + '.png')
+            $(".container-body div").mouseover(function() {
+                $(this).css("color", colorNumbers[random])
+            })
+            $(".container-body div").mouseout(function() {
+                $(this).css("color", "#000")
+            })
             $(".container-body div").click(function(e) {
                 window.open(e.target.title)
             })
